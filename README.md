@@ -3,6 +3,7 @@ PrimeNumberGenerator giving a range of prime numbers
 Welcome to our PrimeNumberGenerator !
 
 There is two part in this project present in two directories
+Part 1 directory present in the master directory "PrimeNumberGenerator"
 
 Part 1 directory contains two files PrimeGenerator.py and test_PrimeGenerator.py. PrimeGenerator.py contains two algorithm, giving all prime numbers between user given range.
 The difference between two algorithm is time_complexity. Algorithm 1 created with floor division method and Algorithm 2 created without floor division.
@@ -54,7 +55,7 @@ Part 2 -> WEB SERVER - To display all prime numbers based on user given range in
    
    PATH CONFIGURATION - WEB SERVER
    
-   Master folder: Assignment --> part 2 --> Web server
+   Master folder: PrimeNumberGenerator --> part 2 --> Web server
                                                 --------> _pycache Dir
                                                 --------> static Dir
                                                 --------> templates Dir
@@ -96,7 +97,7 @@ Part 2 -> WEB SERVER - To display all prime numbers based on user given range in
    
     PATH CONFIGURATION - WEB SERVER
    
-    Master folder: Assignment --> part 2 --> Application Server
+    Master folder: PrimeNumberGenerator --> part 2 --> Application Server
                                                 --------> app_API.py (main python file)
                                                 
    
