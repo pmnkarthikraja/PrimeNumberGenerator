@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<script>
+    
+    function validateForm(){
+        let x=document.forms['Myform']['startnum'].value;
+        let y=document.forms['Myform']['endnum'].value;
+        if ((x=="") | (y=="")){
+            alert("Please Enter valid details!");
+            window.location.reload(true);
+            return false;
+            
+        }
+    }
+    
+</script>
+<body style="background-image:url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgIBw0HBw0HBwcHBwoHBwcHBw8ICQcNFREWFhURExMYHSggGCYxJxMTITEhJSkrLi4uFx8zODMsNygtLisBCgoKDQ0NDw0NDisZFRkrKy0rLSs3LS0tLS0tLSsrKys3LSsrLSsrKysrLSsrKystNy0tKys3KysrKy0rLS0tN//AABEIALEBHAMBIgACEQEDEQH/xAAZAAEBAQEBAQAAAAAAAAAAAAADAgABBAb/xAAZEAEBAQEBAQAAAAAAAAAAAAAAAQISETH/xAAZAQADAQEBAAAAAAAAAAAAAAAAAQIDBQT/xAAWEQEBAQAAAAAAAAAAAAAAAAAAARH/2gAMAwEAAhEDEQA/APo8kyPJcve4MJkuR5LlNaQuS5FkuU1pC5NkWS5TWkLkuRZNlNaQmS5FkuU1pC5JkeSZS0hMrkRkmUripHfHIolIsTYuo0ZUekaJoejTRaHouhaVGdFoWi6FpUZ0WhaLoWlRnQ6FouhaVGdDoWi6FpUZUWhaLoWlM6LSKTQ6pFJkmRZLkqcLkuRZLlNaQ2S5DkuU1pDZNkOS5TWsNkuQ5LlNaQ2S5DmlylpDZJkOaSVLSFySUUqpSVCyu+jld9JWqtRa1qbQWuUelWotUmo0PS9UWqcRUaFomqLSozo9B0XQtKjOi0LRNC0qMqLQtE0LSozo9C0TQ9KjOi0ir0O/VM6TJMiyTJKhslyHJclWkNkuQZpc1NaQ+S5oc0uamtIfNJmhzSZqa0h80uaDNJmpXKfNJKDNXKlpKeVUoZVykrS+t6Pp3osPV+ptT65aY120drWotCbW1RaqtUeqpFqdUWqvVFqqiLUaotVeqLVVGdRqi0vVFqqjOj0PS9UWlRlR6Hpeh6VGdHpFVpFNFXkmaHJM0HDZpc0OaTNTVw+aTNDmkzUtIfNLmgzS5qWkp80ua8+aXNJpKfNJmgzSZqVynlXKCVc0lcp5VTQJpU0StN03ounegek6TdI6cugNVam1N0m002tajVa0eqaLW1RaruqPVUi1zVFqq1RapotTqi1V6otVUZ1GqPVVqj1VRnUaotVeqPVUzqNIqtIqkVWavNFmkzSOGzSZoM0uaS4bNLmgzSZqVynzS5rz5pM1LSV6M0ma8+aTNJcr0SrlBKuaSuV6JVzTzzS5olSnmnZoM07NFitN070Hp3oYek6cuh9OdAaS6RdJuk3R4nVXQ7XLpF0abXdUeq1o9U0Wtqi1XdUeqpFrmqLVVqj1TRanVHqu6o9VTO1OqPVVqj1VIqdVCrUWmiuwkos1coELKTNDmrlJcp5SZoM0malcp80maDNXKS5XozVyglXNJXK9E0uaeeaXNEuV6JpU0CaVNFitPNO9Bmneiw9N03Qum6GHpenOh9OdDBpLpN0i6TdHidVdJuk3SLoytVdDtctRdGi1tVGq5ai00Wtqj1W1UWqRa5qj1XdUdpotctHaq0dqkWuWodtT6aa7KuUUqpQIaVeaGVcpKlNKTNBKuUlSnlJKCVcqVynlXNAlXKS5TzS5p55pc0SpTzSpoE0qaLFaead6B070WHpuneg9N0MGl6boXTnQwaS6cuh3Tl0eFq7pF0m6TdDC1V0i1N0m002u2jta1FqkWtaPVa1Fppta1FrWotNFrlqLXbUWmmuWpdtSaGipURUpgkq5RSqlJULKuUUqpSVKaVcoZVSkqU8qpoMqpolSnmlTQJVTRK080qaBNKmixWm6d6D070WHpum6D070MGl6c6F03QwaTpy6H05dHhau6TdIuk3QLV3SLpNqbo02qtRa5ai002u2ota1Fppta1FrWptNNrWotdtRaaWrnrVw0s7HGAXKqUcrsoMsqpRSqlJWllXKGVUpHppVShlVKStNNKmgyqlJWmmnegzTvQPTdO9B6d6LD0vTvQenehg0nTdC6boYNJ050Ppy6MtJam6RdJtBau6Tam1NplqrU2ptTaaddtTa5am0J121NrlqbTJ21NrWuGlmZgGZmAZ2VxgFSqlGqUGuVUo5XZSPSyqlFK7KD0sqpRSu+kel6d9F676D0vrej9b0j0vTdD6boYNJ056jpz0DSeueo9c9A1fTlqPXPTLVWptctTaC1VqbXLU2mWu2uWuWptNOu2uWuMCZmYBmZgGZmAZmYBmZgHfXfUsAv131HrvoPV+u+o9b0j0nrvo/XfQek9b0frvoGk9b0fregav1vUet6Bq/XPUet6BqvXPU+uegtV6565656Za7656564A764zAmZmAZmYBmZgGZmAZmYBmZgGZmAZozAOx1mButHWAZmYgzMwNqzMCZysxhnGYBxyswJmZgGZmAZmYBmZgGZmAf//Z);background-size: cover;">
+   
+
+    <h1 style="text-align: center;background-color: yellow;">Midaas Telesoft Private Limited </h1>
+    <div>
+       <h1 style="letter-spacing:.2em; text-align:center;cursor:pointer;border-right: 1cm;">Welcome to prime number generator!</h1>
+    </div>
+    {% block content %}
+    <form name="Myform" action={{"/result"}} onsubmit="return validateForm()" method="POST">
+    <div style="margin-bottom:1em;display:inline-flex;background-color:azure;">
+        <label for="" style="font-size: 1.5em; font-weight: 900;">Choose Strategy: </label>
+        <select name="strategy" id="" style="margin-left: 4em;margin-top:.2em;width: 4.7cm;height: .6cm; font-weight: 700;">
+            <option value=1>Strategy 1</option>
+            <option value=2>Strategy 2</option>
+        </select>
+    </div>
+    <div><img src="https://wmznlejcfq.s3-ap-southeast-1.amazonaws.com/media/prime-number/is-97-a-prime-number.png" height="350px" alt="" style="float:right;margin-top: -4cm;"></div>
+    <div>
+       
+        <label for="" style="font-size: 1.5em;">Enter start number: </label>
+        <input type="number" name="startnum" id="" style="margin-left: 1cm;"><br><br>
+        <label for="" style="font-size: 1.5em;">Enter end number: </label>
+        <input type="number" name="endnum" id="" style="margin-left: 1.16cm;">
+        <div >
+        <input type="submit" value="Generate primes" name="" id="submitbtn"  style="width:inherit;font-weight:700;height:.8cm;margin-top:2em;margin-left:10.5cm;position:sticky;">
+        </form>
+        {% endblock %}
+        <form action={{"/"}} style="margin-top:-1.9em;margin-left:15cm; ">
+        <input type="submit" value="Reset" name="" id="resetbtn"  style="width:inherit;font-weight:700;height:.8cm;cursor:pointer;">
+        </form>
+    </div>
+    </div>
+
+    <div style="margin-top:1cm; ">
+    <label for="" style="font-weight: 600;font-size:larger;"><span style="border: 1px solid black; background-color:chartreuse;"> Output </span> - Execution time: <span style="color:chocolate;">{{time_elapsed}}</span> for <span style="color:darkgreen;">strategy {{strategy}}</span></label> <br> <label style="font-weight: 600;font-size:larger;">Total prime Numbers present: <span style="color:Green;">{{totalprime}}</span></label><br><label style="font-weight:650; font-size:larger;">Time: {{timestamp}}</label><br>
+        <textarea  cols={{lenprime}} rows="15" name="" id="" style="margin-top:2em;background-color:gainsboro;page-break-after: auto;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-weight: 600; letter-spacing: 0.1;overflow:auto;">{{result}}</textarea>
+    </div>
+
+</body>
+</html>
